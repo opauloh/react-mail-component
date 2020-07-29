@@ -2,7 +2,7 @@ import React from 'react';
 
 import { MjmlSection, MjmlColumn, MjmlText } from 'mjml-react';
 import Footer from '../components/Footer';
-import { ButtonSection } from '../components/ButtonSection';
+import Button from '../components/Button';
 import Header from '../components/Header';
 import Container from '../components/Container';
 import Card from '../components/Card';
@@ -44,7 +44,7 @@ export const generate = ({ title, to_name, show_day, description, cards, action 
             </React.Fragment>
           ))}
       </MjmlSection>
-      {action && <ButtonSection action={action} />}
+      {action && <Button action={action} />}
       <Footer />
     </Container>
   );

@@ -28,7 +28,7 @@ const Secondary = ({ name, href }) => (
   </MjmlButton>
 );
 
-export const ButtonSection = ({ action }) => (
+const Button = ({ action }) => (
   <MjmlSection>
     <MjmlColumn width="100%">
       {action.map((btn, idx) => {
@@ -42,3 +42,5 @@ export const ButtonSection = ({ action }) => (
     </MjmlColumn>
   </MjmlSection>
 );
+
+export default Button;
