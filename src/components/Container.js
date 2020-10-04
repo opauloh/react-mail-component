@@ -11,7 +11,7 @@ import {
 } from 'mjml-react';
 import { defaultStyle } from '../styles/default';
 
-export const Container = ({ children, title }) => (
+export const Container = ({ children, styling = defaultStyle, title }) => (
   <Mjml>
     <MjmlHead>
       <MjmlTitle>{title}</MjmlTitle>
@@ -25,7 +25,7 @@ export const Container = ({ children, title }) => (
           href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
         />
       </MjmlAttributes>
-      <MjmlStyle inline>{defaultStyle}</MjmlStyle>
+      {styling && <MjmlStyle inline>{styling}</MjmlStyle>}
     </MjmlHead>
     <MjmlBody>{children}</MjmlBody>
   </Mjml>
