@@ -35,11 +35,34 @@ export const generate = ({ title, to_name, show_day, description, cards, action 
           cards.map((card, index) => (
             <React.Fragment key={index}>
               <Card
-                title={card.title}
-                description={card.description}
-                action={card.action}
                 type={card.type}
-              />
+                width= '48%'
+                backgroundColor= '#e5e5e5'
+                borderRadius= '8px'
+                cssClass= 'card'
+              >
+                <Card.Title
+                  paddingTop= '2rem'
+                  color= '#000000'
+                  fontWeight= '900'
+                  fontFamily= 'Roboto, Arial, sans-serif'
+                  fontSize= '3rem'
+                  lineHeight= '3.2rem'
+                >{card.title}</Card.Title>
+                <Card.Description
+                  paddingTop= '0.75rem'
+                  color= '#000000'
+                  fontFamily= 'Roboto, Arial, sans-serif'
+                  fontSize= '1rem'
+                  lineHeight= '1.2rem'
+                >{card.description}</Card.Description>
+                <Card.Action
+                  href={card.action.href}
+                  paddingBottom= '1.5rem'
+                  fontSize= '0.875rem'
+                  fontFamily= 'Roboto Mono, Arial, sans-serif'
+                >{card.action.name}</Card.Action>
+              </Card>
               {index % 2 === 0 && <MjmlColumn width="4%"> </MjmlColumn>}
             </React.Fragment>
           ))}
