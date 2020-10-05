@@ -9,7 +9,9 @@ Card.Description = ({ children, ...props }) => <MjmlText {...props}>{children}</
 
 Card.Action = ({ href, children, ...props }) => (
   <MjmlText {...props}>
-    <a href={href}>{children}</a>
+    <a href={href} style={{ textDecoration: 'none', color: props.color }}>
+      {children}
+    </a>
   </MjmlText>
 );
 
