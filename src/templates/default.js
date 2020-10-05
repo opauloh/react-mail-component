@@ -88,7 +88,7 @@ export const generate = ({ title, description, cards, action }) => {
                       color={pallete.primary}
                       key={idx}
                       href={btn.href}>
-                      {btn.name}
+                      <span className="button_text">{btn.name}</span>
                     </Button>
                   );
                 default:
@@ -99,7 +99,7 @@ export const generate = ({ title, description, cards, action }) => {
                       backgroundColor={pallete.primary}
                       key={idx}
                       href={btn.href}>
-                      {btn.name}
+                      <span className="button_text">{btn.name}</span>
                     </Button>
                   );
               }
