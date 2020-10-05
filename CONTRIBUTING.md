@@ -6,4 +6,5 @@ You can contribute on several forms:
 - Site (Online playground)
 - Improve Validation
 - Improve Authorization
+- Add tests
 - And so on...
