@@ -2,6 +2,8 @@
 
 The aim of this project is to show usage of [mjml](https://mjml.io/) and [mjml-react](https://github.com/wix-incubator/mjml-react) inside a node js.
 
+Wich bring a lot of benefits in reusability, after finished the side project, it was successfully implemented on the company, which brings many benefits, being the main one increased confidence of developers when sending emails because we were able to implement unit tests and snapshot tests as well
+
 ## Usage
 
 ```bash
